@@ -1,3 +1,4 @@
+/*
 .tabs {
     font-size: 0;
 }
@@ -7,14 +8,14 @@
 }
 
 .tabs>div {
-    /* скрыть контент по умолчанию */
+    !* скрыть контент по умолчанию *!
     display: none;
     border: 1px solid #e0e0e0;
     padding: 10px 15px;
     font-size: 16px;
 }
 
-/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+!* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") *!
 #tab-btn-1:checked~#content-1,
 #tab-btn-2:checked~#content-2 {
     display: block;
@@ -43,4 +44,53 @@
 .tabs>input[type="radio"]:checked+label {
     background-color: #fff;
     border-bottom: 1px solid #fff;
+}*/
+
+.main-tabs{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.top-tabs{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+}
+
+.tab-input{
+    display: none;
+}
+
+.tab-label{
+    display: flex;
+    --width: 50%;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border: 0.33px outset;
+    margin: 0px 2px 0px 2px;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+.tab-label-select{
+    background-color: #bdd5e5;
+}
+
+.tab-label:hover{
+    background-color: #acbfcc;
+}
+
+.work-place-tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
 }

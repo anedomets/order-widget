@@ -11,4 +11,6 @@ import Form from "@/components/modal/form/Form.vue";
 })
 export default class Tab extends Vue {
 
+    private selectTab : String = new String('tab1')
+
 }
