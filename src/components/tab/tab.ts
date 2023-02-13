@@ -1,13 +1,11 @@
 import Vue from 'vue'
-import {createStore} from '@/store/store.ts'
 import Component from "vue-class-component";
-import Form from "@/components/modal/form/Form.vue";
+import CreateAssigment from "@/components/createAssigment/CreateAssigment.vue";
 
 @Component({
     components: {
-        Form
-    },
-    store: createStore()
+        CreateAssigment
+    }
 })
 export default class Tab extends Vue {
 

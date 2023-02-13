@@ -5,7 +5,7 @@
     <input type="radio" name="tab-btn" id="tab-btn-2" value="">
     <label for="tab-btn-2">Просмотр поручений</label>
     <div id="content-1">
-      <Form/>
+      <CreateAssigment/>
     </div>
     <div id="content-2">
       У Вас нет поручений
@@ -20,7 +20,7 @@
     </div>
     <div class="work-place-tabs">
       <template v-if="selectTab=='tab1'">
-        <Form/>
+        <CreateAssigment/>
       </template>
       <template v-if="selectTab=='tab2'">
         Tab2

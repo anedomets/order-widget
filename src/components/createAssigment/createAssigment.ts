@@ -1,14 +1,12 @@
 import Vue from 'vue'
-import {createStore} from '@/store/store.ts'
 import Component from "vue-class-component";
-import {Assignment, CurrencyRate} from "@/store/model";
+import {Assignment} from "@/store/model";
 
 @Component({
     components: {
-    },
-    store: createStore()
+    }
 })
-export default class Form extends Vue {
+export default class CreateAssigment extends Vue {
     private assignment : Assignment | null = null
 
     get funcAssignment(){

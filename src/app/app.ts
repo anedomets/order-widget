@@ -5,12 +5,9 @@ import Component from "vue-class-component";
 import VueCookies from "vue-cookies";
 import keycloakInstance from "@/plugins/keycloak";
 import axios from "axios";
-import Currency from "@/components/modal/currency/Currency.vue";
-import Form from "@/components/modal/form/Form.vue";
-import CurrencyCard from "@/components/modal/currencyCard/CurrencyCard.vue";
+import CreateAssigment from "@/components/createAssigment/CreateAssigment.vue";
 // @ts-ignore
 import VueGoodTablePlugin from 'vue-good-table';
-// import the styles
 import 'vue-good-table/dist/vue-good-table.css'
 import VueRouter from "vue-router";
 
@@ -20,9 +17,7 @@ Vue.use(VueCookies);
 Vue.use(VueRouter)
 @Component({
     components: {
-        Currency,
-        CurrencyCard,
-        Form
+        CreateAssigment
     },
     store: createStore()
 })

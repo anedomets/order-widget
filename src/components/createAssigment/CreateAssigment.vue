@@ -6,5 +6,5 @@
   </div>
 </template>
 
-<script src="./form.ts"></script>
-<style src="./form.css"></style>
+<script src="./createAssigment.ts"></script>
+<style src="./createAssigment.css"></style>
